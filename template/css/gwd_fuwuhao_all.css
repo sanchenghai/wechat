@@ -70,7 +70,7 @@ a {
      -moz-box-sizing: border-box;
           box-sizing: border-box;
 }
-.col-gwd-5-20, .col-gwd-3-40, .col-gwd-3-5, .col-gwd-3-55, .col-gwd-3-33{
+.col-gwd-5-20, .col-gwd-3-40, .col-gwd-3-5, .col-gwd-3-55, .col-gwd-3-33, .col-gwd-2-61, .col-gwd-2-39{
   min-height: 1px;
   float: left;
   position: relative;
@@ -89,6 +89,12 @@ a {
 }
 .col-gwd-3-33{
   width: 33.33%;
+}
+.col-gwd-2-61{
+  width: 61%;
+}
+.col-gwd-2-39{
+  width: 39%;
 }
 .gwd-img-block-center{
   max-width: 100%;
