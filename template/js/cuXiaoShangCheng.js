@@ -26,20 +26,4 @@ $(function(){
     }
   });
 
-  //数据选择
-  $(".col-gwd-5-20").on("click", function(){
-    var thiscategory = $(this).index();
-    if(thiscategory == category){
-      return;
-    }else{
-      category = thiscategory;
-    }
-    //category分别是0~9，根据category请求不同的数据接口
-    // $.ajax();请求数据，和上一个类似，成功后gwd_haitao_list.empty();示例如下：
-    $.getJSON("http://open.gwdang.com/query?appkey=14ddb9671ec3a384ed28efef3e481a20&ac=quan&order=time&page=2&pagesize=10&callback=?", function(data){
-        gwd_haitao_list.empty();
-        renderHaitao(data, gwd_haitao_list);
-    });
-  });
-
 });

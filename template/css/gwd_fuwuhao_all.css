@@ -49,6 +49,7 @@ a {
 
 /* === Global ===*/
 .container {
+  background-color: white;
   margin-right: auto;
   margin-left: auto;
   -webkit-box-sizing: border-box;
@@ -132,7 +133,6 @@ hr{
           box-sizing: content-box;
 }
 .title{
-  font-weight: bold;
   text-align: left;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -466,3 +466,153 @@ hr{
   }
 }
 /*=== End CuXiaoShangCheng ===*/
+
+
+
+/*=== CuXiaoReMen ===*/
+#gwd_cxrm .row{
+  margin-top: 5px;
+}
+#gwd_cxrm .col-gwd-2-61{
+  border: 1px solid #eee;
+  text-align: center;
+  font-size: 0;
+}
+#gwd_cxrm .col-gwd-2-61 span{
+  height: 100%;
+  min-height: 100px;
+  display: inline-block;
+  vertical-align: middle;
+}
+#gwd_cxrm .col-gwd-2-61 img{
+  display: inline-block;
+  vertical-align: middle;
+}
+#gwd_cxrm .col-gwd-2-39{
+  padding: 5px 5px 15px 15px;
+  position: static;
+}
+#gwd_cxrm .col-gwd-2-39 .mall{
+  text-align: center;
+}
+#gwd_cxrm .col-gwd-2-39 .mall .mall-icon{
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  position: static;
+}
+#gwd_cxrm .col-gwd-2-39 .mall .mall-name{
+  display: inline-block;
+  width: 70px;
+  font-weight: bold;
+  line-height: 20px;
+  color: #333;
+  position: static;
+}
+#gwd_cxrm .col-gwd-2-39 .title{
+  height: 54px;
+  line-height: 18px;
+  color: #333;
+  -webkit-line-clamp: 3;
+}
+#gwd_cxrm .col-gwd-2-39 .atime{
+  color: #999;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow:ellipsis;
+  position: absolute;
+  bottom: 2px;
+}
+#gwd_cxrm .col-gwd-2-39 hr{
+  width: 33%;
+  position: absolute;
+  bottom: -7px;
+}
+@media(min-width: 768px){
+  #gwd_cxrm .row{
+    margin-top: 20px;
+  }
+  #gwd_cxrm .col-gwd-2-61 span{
+    min-height: 180px;
+  }
+  #gwd_cxrm .col-gwd-2-39 .mall{
+    margin-top: 10px;
+  }
+  #gwd_cxrm .col-gwd-2-39 .mall .mall-name{
+    width: auto;
+    line-height: 100%;
+    padding-bottom: 2px;
+    padding-left: 5px;
+  }
+  #gwd_cxrm .col-gwd-2-39 .title{
+    height: 90px;
+    line-height: 30px;
+  }
+  #gwd_cxrm .col-gwd-2-39 .atime{
+    bottom: 15px;
+  }
+  #gwd_cxrm .col-gwd-2-39 hr{
+    bottom: -30px;
+  }
+}
+@media (min-width: 992px) {
+  #gwd_cxrm .col-gwd-2-61 span{
+    min-height: 230px;
+  }
+  #gwd_cxrm .col-gwd-2-39 .mall{
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  #gwd_cxrm .col-gwd-2-39 .mall .mall-name{
+    padding-bottom: 2px;
+    padding-left: 8px;
+  }
+  #gwd_cxrm .col-gwd-2-39 .title{
+    height: 102px;
+    line-height: 34px;
+  }
+  #gwd_cxrm .col-gwd-2-39 .atime{
+    bottom: 25px;
+  }
+}
+@media (min-width: 1200px) {
+  #gwd_cxrm .col-gwd-2-61 span{
+    min-height: 280px;
+  }
+  #gwd_cxrm .col-gwd-2-39 .mall{
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+  #gwd_cxrm .col-gwd-2-39 .mall .mall-name{
+    padding-bottom: 0;
+    padding-left: 10px;
+  }
+  #gwd_cxrm .col-gwd-2-39 .title{
+    height: 120px;
+    line-height: 40px;
+  }
+  #gwd_cxrm .col-gwd-2-39 .atime{
+    bottom: 35px;
+  }
+}
+@media (min-width: 1600px) {
+  #gwd_cxrm .col-gwd-2-61 span{
+    min-height: 370px;
+  }
+  #gwd_cxrm .col-gwd-2-39 .mall{
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+  #gwd_cxrm .col-gwd-2-39 .mall .mall-name{
+    padding-bottom: 0;
+    padding-left: 10px;
+  }
+  #gwd_cxrm .col-gwd-2-39 .title{
+    height: 174px;
+    line-height: 58px;
+  }
+  #gwd_cxrm .col-gwd-2-39 .atime{
+    bottom: 45px;
+  }
+}
+/*=== End CuXiaoReMen ===*/
