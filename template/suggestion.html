@@ -16,11 +16,19 @@
   <body>
     <!-- === Gwd_suggestion === -->
     <div id="gwd_suggestion">
-      <div class="container"></div><!-- container -->
+      <p>亲，不爽就吐槽吧，您的吐槽是我们进步的动力，加油。</p>
+      <textarea placeholder="在这里输入您的反馈......"></textarea>
+      <span></span>
+      <a href="javascript:submit();">爽了</a>
     </div><!-- gwd_suggestion -->
     <!-- === End Gwd_suggestion === -->
 
     <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript"></script>
+    <script type="text/javascript">
+      function submit(){
+        var suggestion = $("textarea").val();
+        $("span").text(suggestion);
+      }
+    </script>
   </body>
 </html>
