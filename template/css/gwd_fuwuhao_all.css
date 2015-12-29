@@ -43,6 +43,9 @@ abbr,acronym {
 a {
   text-decoration:none;
 }
+input, button, select, textarea{
+  outline:none;
+}
 /*=== End Reset ===*/
 
 
@@ -72,7 +75,7 @@ a {
      -moz-box-sizing: border-box;
           box-sizing: border-box;
 }
-.col-gwd-5-20, .col-gwd-3-40, .col-gwd-3-5, .col-gwd-3-55, .col-gwd-3-33, .col-gwd-2-61, .col-gwd-2-39{
+.col-gwd-5-20, .col-gwd-3-40, .col-gwd-3-5, .col-gwd-3-55, .col-gwd-3-33, .col-gwd-2-61, .col-gwd-2-39, .col-gwd-4-19, .col-gwd-4-31{
   min-height: 1px;
   float: left;
   position: relative;
@@ -97,6 +100,12 @@ a {
 }
 .col-gwd-2-39{
   width: 39%;
+}
+.col-gwd-4-19{
+  width: 19%;
+}
+.col-gwd-4-31{
+  width: 31%;
 }
 .gwd-img-block-center{
   max-width: 100%;
@@ -494,7 +503,7 @@ hr{
   position: static;
 }
 #gwd_cxrm .col-gwd-2-39 .mall{
-  text-align: center;
+  text-align: left;
 }
 #gwd_cxrm .col-gwd-2-39 .mall .mall-icon{
   display: inline-block;
@@ -797,3 +806,146 @@ hr{
   }
 }
 /*=== End JiangJiaTiXing ===*/
+
+
+
+/*=== Login ===*/
+#gwd_login{
+  width: 100%;
+}
+#gwd_login>img{
+  padding: 50px 80px;
+  margin-bottom: 5px;
+}
+#gwd_login span{
+  width: 30px;
+  height: 30px;
+  background: url(../image/i_img_for_login.png) no-repeat;
+  margin-left: 16px;
+  position: absolute;
+  left: 10%;
+  top: 6px;
+}
+#gwd_login input{
+  display: block;
+  width: 80%;
+  font-size: 18px;
+  padding: 10px 0 10px 50px;
+  margin: 0 auto;
+  border: 1px solid #aaa;
+  border-radius: 20px;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+#gwd_login p{
+  font-size: 12px;
+  color: red;
+  margin-left: 50px;
+  position: absolute;
+  left: 10%;
+  bottom: -15px;
+}
+#gwd_login .isonfocus input{
+  border-color: rgb(55,160,227);
+}
+#gwd_login .username{
+  margin-bottom: 18px;
+  position: relative;
+}
+#gwd_login .username span{
+  background-position: 2px -65px;
+}
+#gwd_login .username.isonfocus span{
+  background-position: 2px -105px;
+}
+#gwd_login .password{
+  margin-bottom: 20px;
+  position: relative;
+}
+#gwd_login .password span{
+  background-position: 2px -145px;
+}
+#gwd_login .password.isonfocus span{
+  background-position: 2px -185px;
+}
+#gwd_login .loginbutton{
+  width: 80%;
+  text-align: center;
+  font-size: 20px;
+  background-color: rgb(23,145,222);
+  color: white;
+  margin: 0 auto;
+  margin-bottom: 66px;
+  padding: 10px 0;
+  border-radius: 20px;
+  cursor: pointer;
+}
+#gwd_login .othertext{
+  margin-bottom: 13px;
+}
+#gwd_login .col-gwd-3-33{
+  min-height: 8px;
+  text-align: center;
+  font-size: 12px;
+  color: rgb(23,145,222);
+  border-bottom: 1px solid #eee;
+}
+#gwd_login .col-gwd-3-33.noborder{
+  border: none;
+}
+#gwd_login .othericon{
+  margin-bottom: 15px;
+}
+#gwd_login .othericon .col-gwd-4-31{
+  padding: 0 25px 25px 25px;
+  cursor: pointer;
+}
+@media(min-width: 1000px){
+  #gwd_login{
+    width: 640px;
+    margin: 0 auto;
+  }
+  #gwd_login>img{
+    margin-top: 50px;
+    margin-bottom: 65px;
+  }
+  #gwd_login span{
+    margin-left: 30px;
+    left: 10%;
+    top: 28px;
+  }
+  #gwd_login input{
+    font-size: 30px;
+    padding: 24px 0 24px 80px;
+    border-radius: 40px;
+  }
+  #gwd_login p{
+    font-size: 18px;
+    margin-left: 80px;
+    bottom: -28px;
+  }
+  #gwd_login .username{
+    margin-bottom: 35px;
+  }
+  #gwd_login .password{
+    margin-bottom: 40px;
+  }
+  #gwd_login .loginbutton{
+    font-size: 30px;
+    padding: 22px 0;
+    margin-bottom: 132px;
+    border-radius: 40px;
+  }
+  #gwd_login .othertext{
+    margin-bottom: 26px;
+  }
+  #gwd_login .col-gwd-3-33{
+    min-height: 15px;
+    font-size: 22px;
+  }
+  #gwd_login .othericon{
+    margin-bottom: 58px;
+  }
+}
+/*=== End Login ===*/

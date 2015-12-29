@@ -16,11 +16,63 @@
   <body>
     <!-- === Gwd_login === -->
     <div id="gwd_login">
-      <div class="container"></div><!-- container -->
+      <img src="image/logo.png" alt="logo" class="gwd-img-block-center">
+      <div class="username">
+        <span></span>
+        <input type="text" placeholder="邮箱">
+        <p class="userwrong"></p>
+      </div><!-- username -->
+      <div class="password">
+        <span></span>
+        <input type="password" placeholder="密码">
+        <p class="passwrong"></p>
+      </div><!-- password -->
+      <div class="loginbutton">登录</div>
+      <div class="row othertext">
+        <div class="col-gwd-3-33"></div>
+        <div class="col-gwd-3-33 noborder">其他账号授权登录</div>
+        <div class="col-gwd-3-33"></div>
+      </div><!-- row othertext -->
+      <div class="row othericon">
+        <div class="col-gwd-4-19"></div>
+        <div class="col-gwd-4-31"><img src="image/weibo.png" class="gwd-img-block-center weibo"></div>
+        <div class="col-gwd-4-31"><img src="image/qq.png" class="gwd-img-block-center qq"></div>
+        <div class="col-gwd-4-19"></div>
+      </div><!-- row othericon -->
     </div><!-- gwd_login -->
     <!-- === End Gwd_login === -->
 
     <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript"></script>
+    <script type="text/javascript">
+      $(function(){
+        //输入框的焦点样式
+        $("input").focus(function(){
+          $(this).parent().addClass("isonfocus");
+        }).blur(function(){
+          $(this).parent().removeClass("isonfocus");
+        });
+
+        //登录按钮
+        $(".loginbutton").click(function(){
+          var username = $(".username input").val();
+          var password = $(".password input").val();
+          //@万能超
+          $(".userwrong").text(username);
+          $(".passwrong").text(password);
+        });
+
+        //微博登录
+        $(".weibo").click(function(){
+          //@万能超
+          alert($(this).attr("src"));
+        });
+
+        //QQ登录
+        $(".qq").click(function(){
+          //@万能超
+          alert($(this).attr("src"));
+        });
+      });
+    </script>
   </body>
 </html>
