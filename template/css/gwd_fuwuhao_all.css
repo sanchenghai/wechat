@@ -901,7 +901,7 @@ hr{
   padding: 0 25px 25px 25px;
   cursor: pointer;
 }
-@media(min-width: 1000px){
+@media(min-width: 768px){
   #gwd_login{
     width: 640px;
     margin: 0 auto;
@@ -949,3 +949,70 @@ hr{
   }
 }
 /*=== End Login ===*/
+
+
+
+/*=== Suggestion ===*/
+#gwd_suggestion{
+  padding: 15px;
+}
+#gwd_suggestion p{
+  font-size: 16px;
+  line-height: 24px;
+  color: black;
+  margin-bottom: 20px;
+}
+#gwd_suggestion textarea{
+  display: block;
+  width: 100%;
+  height: 200px;
+  font-size: 14px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+#gwd_suggestion .hint{
+  height: 26px;
+  width: 100%;
+  color: red;
+  font-size: 14px;
+  overflow: hidden;
+}
+#gwd_suggestion a{
+  display: block;
+  border-radius: 4px;
+  background-color: rgb(13,162,255);
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  padding: 10px 0;
+}
+@media(min-width: 768px){
+  #gwd_suggestion{
+    width: 640px;
+    margin: 0 auto;
+  }
+  #gwd_suggestion p{
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 30px;
+  }
+  #gwd_suggestion textarea{
+    height: 400px;
+    font-size: 24px;
+    border-radius: 8px;
+  }
+  #gwd_suggestion .hint{
+    height: 30px;
+    font-size: 24px;
+  }
+  #gwd_suggestion a{
+    border-radius: 8px;
+    font-size: 30px;
+    padding: 16px 0;
+  }
+}
+/*=== End Suggestion ===*/

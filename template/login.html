@@ -54,9 +54,19 @@
 
         //登录按钮
         $(".loginbutton").click(function(){
+          $(".userwrong").text('');
+          $(".passwrong").text('');
           var username = $(".username input").val();
           var password = $(".password input").val();
           //@万能超
+          if(username == ''){
+            $(".userwrong").text('请填写登录邮箱！');
+            return;
+          }
+          if(password == ''){
+            $(".passwrong").text('请填写密码！');
+            return;
+          }
           $(".userwrong").text(username);
           $(".passwrong").text(password);
         });

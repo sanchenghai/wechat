@@ -18,7 +18,7 @@
     <div id="gwd_suggestion">
       <p>亲，不爽就吐槽吧，您的吐槽是我们进步的动力，加油。</p>
       <textarea placeholder="在这里输入您的反馈......"></textarea>
-      <span></span>
+      <div class="hint"></div>
       <a href="javascript:submit();">爽了</a>
     </div><!-- gwd_suggestion -->
     <!-- === End Gwd_suggestion === -->
@@ -26,8 +26,13 @@
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript">
       function submit(){
+        $(".hint").text('');
         var suggestion = $("textarea").val();
-        $("span").text(suggestion);
+        if(suggestion == ''){
+          $(".hint").text('不要害羞，让吐槽来的更猛烈些吧！');
+          return;
+        }
+        $(".hint").text(suggestion);
       }
     </script>
   </body>
