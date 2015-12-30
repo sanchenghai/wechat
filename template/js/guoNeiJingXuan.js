@@ -10,9 +10,6 @@ $(function(){
     var windowScrollTop = $(window).scrollTop() || $(document).scrollTop(),
          windowHeight = $(window).height(),
         documentHeight = $(document).height();
-    // console.log(windowScrollTop);
-    // console.log(windowScrollTop + windowHeight);
-    // console.log(documentHeight);
     if(windowScrollTop + windowHeight > documentHeight - 100 && !loadNow){
       loadNow = true;
       gwd_haitao_list.append("<div id='loading' style='text-align:center;padding:10px;'>正在加载...</div>");
