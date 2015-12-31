@@ -257,22 +257,16 @@ hr{
 #gwd_haitao_list .col-gwd-3-40{
   border: 1px solid #fff;
   border-radius: 4px;
-}
-#gwd_haitao_list .col-gwd-3-40 a{
-  display: inline-block;
-  width: 100%;
-  height: 100%;
   text-align: center;
-  vertical-align: middle;
   font-size: 0;
 }
-#gwd_haitao_list .col-gwd-3-40 a span{
+#gwd_haitao_list .col-gwd-3-40 span{
   height: 100%;
   min-height: 110px;
   display: inline-block;
   vertical-align: middle;
 }
-#gwd_haitao_list .col-gwd-3-40 a img{
+#gwd_haitao_list .col-gwd-3-40 img{
   display: inline-block;
   vertical-align: middle;
 }
@@ -280,31 +274,37 @@ hr{
   position: static;
 }
 #gwd_haitao_list .col-gwd-3-55 .title{
-  height: 52px;
-  padding-top: 10px;
-}
-#gwd_haitao_list .col-gwd-3-55 .title a{
+  height: 36px;
+  padding-top: 4px;
   color: #333;
-  line-height: 26px;
-}
-#gwd_haitao_list .col-gwd-3-55 .title a:hover{
-  text-decoration: underline;
+  line-height: 18px;
 }
 #gwd_haitao_list .col-gwd-3-55 .price{
-  color: #d80000;
+  max-height: 32px;
+  line-height: 16px;
   position: absolute;
-  bottom: 10px;
+  bottom: 30px;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 #gwd_haitao_list .col-gwd-3-55 .mall-icon{
   width: 20px;
   height: 20px;
-  bottom: 8px;
-  right: 90px;
+  bottom: 4px;
 }
 #gwd_haitao_list .col-gwd-3-55 .mall-name{
   width: 60px;
-  bottom: 10px;
-  right: 20px;
+  margin-left: 24px;
+  bottom: 6px;
+}
+#gwd_haitao_list .col-gwd-3-55 .ltime{
+  position: absolute;
+  bottom: 6px;
+  right: 10px;
 }
 #gwd_haitao_list .col-gwd-3-55 hr{
   width: 55%;
@@ -324,22 +324,24 @@ hr{
     height: 176px;
   }
   #gwd_haitao_list .col-gwd-3-55 .title{
-    height: 76px;
-    padding-top: 20px;
-  }
-  #gwd_haitao_list .col-gwd-3-55 .title a{
-    line-height: 38px;
+    height: 68px;
+    padding-top: 4px;
+    line-height: 34px;
   }
   #gwd_haitao_list .col-gwd-3-55 .price{
-    bottom: 20px;
+    max-height: 56px;
+    line-height: 28px;
+    bottom: 40px;
   }
   #gwd_haitao_list .col-gwd-3-55 .mall-icon{
-    right: 120px;
-    bottom: 22px;
+    bottom: 12px;
   }
   #gwd_haitao_list .col-gwd-3-55 .mall-name{
     width: 90px;
-    bottom: 20px;
+    bottom: 10px;
+  }
+  #gwd_haitao_list .col-gwd-3-55 .ltime{
+    bottom: 10px;
   }
   #gwd_haitao_list .col-gwd-3-55 hr{
     bottom: -30px;
@@ -355,22 +357,24 @@ hr{
     width: 550px;
   }
   #gwd_haitao_list .col-gwd-3-55 .title{
-    height: 84px;
-    padding-top: 30px;
-  }
-  #gwd_haitao_list .col-gwd-3-55 .title a{
-    line-height: 42px;
+    height: 72px;
+    padding-top: 10px;
+    line-height: 38px;
   }
   #gwd_haitao_list .col-gwd-3-55 .price{
-    bottom: 30px;
+    max-height: 56px;
+    line-height: 28px;
+    bottom: 40px;
   }
   #gwd_haitao_list .col-gwd-3-55 .mall-icon{
-    right: 130px;
-    bottom: 32px;
+    bottom: 12px;
   }
   #gwd_haitao_list .col-gwd-3-55 .mall-name{
     width: 100px;
-    bottom: 30px;
+    bottom: 10px;
+  }
+  #gwd_haitao_list .col-gwd-3-55 .ltime{
+    bottom: 10px;
   }
 }
 @media (min-width: 1200px) {
@@ -383,22 +387,24 @@ hr{
     height: 276px;
   }
   #gwd_haitao_list .col-gwd-3-55 .title{
-    height: 92px;
-    padding-top: 40px;
-  }
-  #gwd_haitao_list .col-gwd-3-55 .title a{
-    line-height: 46px;
+    height: 88px;
+    padding-top: 20px;
+    line-height: 44px;
   }
   #gwd_haitao_list .col-gwd-3-55 .price{
-    bottom: 40px;
+    max-height: 68px;
+    line-height: 34px;
+    bottom: 60px;
   }
   #gwd_haitao_list .col-gwd-3-55 .mall-icon{
-    right: 140px;
-    bottom: 42px;
+    bottom: 22px;
   }
   #gwd_haitao_list .col-gwd-3-55 .mall-name{
     width: 110px;
-    bottom: 40px;
+    bottom: 20px;
+  }
+  #gwd_haitao_list .col-gwd-3-55 .ltime{
+    bottom: 20px;
   }
 }
 @media (min-width: 1600px) {
@@ -411,22 +417,24 @@ hr{
     height: 366px;
   }
   #gwd_haitao_list .col-gwd-3-55 .title{
-    height: 106px;
-    padding-top: 50px;
-  }
-  #gwd_haitao_list .col-gwd-3-55 .title a{
+    height: 116px;
+    padding-top: 30px;
     line-height: 58px;
   }
   #gwd_haitao_list .col-gwd-3-55 .price{
-    bottom: 50px;
+    max-height: 100px;
+    line-height: 50px;
+    bottom: 80px;
   }
   #gwd_haitao_list .col-gwd-3-55 .mall-icon{
-    right: 170px;
-    bottom: 55px;
+    bottom: 46px;
   }
   #gwd_haitao_list .col-gwd-3-55 .mall-name{
     width: 140px;
-    bottom: 50px;
+    bottom: 40px;
+  }
+  #gwd_haitao_list .col-gwd-3-55 .ltime{
+    bottom: 40px;
   }
 }
 /*=== End Haitao ===*/
