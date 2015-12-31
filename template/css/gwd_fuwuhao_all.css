@@ -444,7 +444,7 @@ hr{
 /*=== CuXiaoShangCheng ===*/
 #gwd_cxsc .col-gwd-3-33{
   border: 1px solid #ababab;
-  padding: 1px 0;
+  padding: 10px;
 }
 #gwd_cxsc .col-gwd-3-33 a{
   display: inline-block;
@@ -456,7 +456,6 @@ hr{
 }
 #gwd_cxsc .col-gwd-3-33 a span{
   height: 100%;
-  min-height: 60px;
   display: inline-block;
   vertical-align: middle;
 }
