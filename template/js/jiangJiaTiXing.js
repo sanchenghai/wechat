@@ -1,6 +1,6 @@
 $(function(){
   //全局要用的变量
-  var category = 0,//默认加载全部分类
+  var category = 'all',//默认加载全部分类
         loadNow = false,//数据加载中标志
         gwd_jjtx_list = $("#gwd_jjtx_list .container");//加载数据时的父节点
 
@@ -24,7 +24,12 @@ $(function(){
   });
 
   //数据选择
+  $("#gwd_jjtx_top p").on("click", function(){
+    $("#gwd_jjtx_top ul").slideToggle("slow");
+  });
   $("#gwd_jjtx_top li").on("click", function(){
+    $("#gwd_jjtx_top ul").slideUp("slow");
+    $("#gwd_jjtx_top p span").text($(this).text());
     var thiscategory = $(this).attr('id');
     if(thiscategory == category){
       return;
